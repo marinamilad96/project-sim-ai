@@ -3,16 +3,16 @@ library(tidyr)
 library(yaml)
 
 
-config <- yaml::read_yaml("/home/miladm/scratch/git/TreeStatistics-/scripts/config.yaml")
+config <- yaml::read_yaml("/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/config-files/config.yaml")
 
 config$Directory$Input_Tree_Folder <- gsub(
   "\\$TMPDIR", Sys.getenv("TMPDIR"), config$Directory$Input_Tree_Folder
 )
-print(config$Directory$Input_Tree_Folder)
+#print(config$Directory$Input_Tree_Folder)
 config$Directory$Output_Tree_File <- gsub(
   "\\$TMPDIR", Sys.getenv("TMPDIR"), config$Directory$Output_Tree_File
 )
-print(config$Directory$Output_Tree_File)
+#print(config$Directory$Output_Tree_File)
 
 # Define the path to the tree file and ensure the tree file exists, If it is not phylo format, you will need to convert it first to calculate statistics.
 tree_files <- list.files(config$Directory$Input_Tree_Folder, pattern = ".trees$", full.names = TRUE) # Extract only full trees (pattern = "\\.full\\.trees$")
