@@ -1,0 +1,7 @@
+﻿SCount,Ein,EingangsDatum,EntnahmeDatum,ErkrBeginn,EkzBeginn,BLand,GesAmt,Material,Genotyp,WHO distinct SeqID,ID_xsl_prefix,Material dict_xsl,FileName,FullPath,ID_seq_prefix,ID_seq_Remainder,Material dict_seq,_merge
+01-01706.01,"50935 Köln, Institut für Virologie der Universität zu Köln",2001-08-21,2001-07-20,2001-07-18,2001-07-20,Nordrhein-Westfalen,,Liquor,D7,95,01-01706,Other,,,,,,left_only
+03-03632.02,"66482 Zweibrücken, Dr. G. Kreibig",2003-06-23,2003-06-20,2003-06-19,2003-06-19,Rheinland-Pfalz,,Rachenabstrich,D7,no match 02-00732,03-03632,Rachenabstrich,,,,,,left_only
+14-00177.01,"60433 Frankfurt, Dr. med. H. Falkenhan",2014-04-07,2014-04-03,2014-04-03,,Hessen,Frankfurt am Main,oral fluid,D8,2266,14-00177,Oral Fluid,,,,,,left_only
+17-00080.01,"13353 Berlin, Charité Campus Virchow-Klinikum",2017-01-31,2017-01-29,2017-01-26,2017-01-28,Berlin,Berlin,oral fluid,D8,	2283,17-00080,Oral Fluid,,,,,,left_only
+20-00083.01,"87616 Marktoberdorf, Landratsamt Ostallgäu",2020-01-24,,2020-01-16,2020-01-19,Bayern,Marktoberdorf,Rachenabstrich,D8,4683,20-00083,Rachenabstrich,,,,,,left_only
+24-00187.01,"86807 Buchloe, Praxis",2024-02-16,2024-02-14,2024-02-05,2024-02-08,Bayern,Marktoberdorf,Urin,D8,8350,24-00187,Urine,,,,,,left_only

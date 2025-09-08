@@ -1,0 +1,7 @@
+input_folder_path:
+  de_filtered : "project-1-N450/project-1.1-Data-desc/results.t/extracted-seq-xsl/de_filtered.csv"
+  
+
+output_folder_path:
+  de_filtered_sampling_date : "project-1-N450/project-1.1-Data-desc/results.t/mafft-msa-results/trial-6/de_filtered_id_genotype_date.fasta"
+  de_filtered_dates : "project-1-N450/project-1.1-Data-desc/results.t/mafft-msa-results/trial-6/dates.txt"

@@ -1,0 +1,13 @@
+#Ignore Data files
+Data/
+#Ignore tree files
+*.trees
+*.nwk
+*.traj
+*.xml
+#Ignore png files
+*.png
+#Ignore fasta files
+*.fasta
+
+.DS_Store

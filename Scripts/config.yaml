@@ -1,0 +1,57 @@
+input_folder: "/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/gene_data/"
+output_folder: "/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/"
+csv_output: "/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/validation_results.csv"
+
+Sequence_folder:
+  seq_file : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/fasta'
+  seq_output_file : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/fasta_filenames.csv'
+  rep_IDs_file : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/rep_ID.csv'
+
+Excel_folder:
+  excel_file_path : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/example.csv'
+  excel_file_path_output : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/excel_output.csv'
+  df_xsl_ausland_file : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/df_xsl_ausland.csv'
+  df_xsl_de_file : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/df_xsl_de.csv'
+
+Extract_folder:
+  extract_file_path_output : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/extracted_data_output.csv'
+  unmatched_file_path_output : '/Users/MiladM-Dev/Documents/1PhD/Dataset_trials/B3_mimic/results/unmatched_data_output.csv'
+
+
+extraction_abbreviation:
+  Rachenabstrich:
+  - Rachenabstrich
+  - Rsp
+  - RA
+  - Ra
+  - Rachenabstrich 1
+  - ZKÜ-Ra
+  - FTA card Ra
+  - Rachenabstrich in Gel
+  - cDNA aus Rachenabstrich
+  - Rachenabstrich trocken
+  - Filterpapier RA
+  - RNA aus Rachenabstrich
+  - Rachenabstrich in Flüssigkeit
+  Urine:
+  - Urine
+  - Urin
+  - Urin 1
+  - ZKÜ-Urin (kein Mat. in MaMuRoe)
+  - ZKÜ-Urin
+  - cDNA aus Urin
+  - Urinsediment in DMEM
+  - RNA Urin
+  Serum:
+  - Serum
+  - RNA Serum
+  - Bserum
+  - Serum (S laut MaMuRoe)
+  Plasma:
+  - RNA aus Plasma
+  - Plasma
+  Oral Fluid:
+  - OF
+  - oral fluid
+  - cDNA aus Oral fluid
+  - RNA aus Oral fluid

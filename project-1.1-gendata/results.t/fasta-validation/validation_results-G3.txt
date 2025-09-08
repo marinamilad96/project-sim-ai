@@ -1,0 +1,27 @@
+/scratch/miladm/N-450seq/results/converted-fasta/G3/11-00417RNA.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/G3/11-00415RNA.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/G3/11-00410RNA.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/G3/11-00251R.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/G3/11-00250R.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/G3/11-00211RNA.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/G3/11-00201.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/G3/11-00106.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/G3/10-00500.fasta
+Exit code: 0
+

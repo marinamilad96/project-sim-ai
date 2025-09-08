@@ -1,0 +1,153 @@
+input_folder: "/scratch/miladm/N-450seq/Measles sequences N450 - Copy/H1/"
+output_folder: "/scratch/miladm/N-450seq/results/converted-fasta/H1/"
+csv_output: "/scratch/miladm/N-450seq/results/csv-results/fasta-validation/validation_results-H1.txt"
+
+Sequence_folder:
+  genotypes_seq_folder : '/scratch/miladm/N-450seq/results/converted-fasta/'
+  seq_output_file : '/scratch/miladm/N-450seq/results/csv-results/seq-csv-output/seq_output.csv'
+  rep_IDs_file : '/scratch/miladm/N-450seq/results/csv-results/seq-csv-output/rep_ID.csv'
+
+Excel_folder:
+  excel_file_path : "/scratch/miladm/N-450seq/Measles sequences N450 - Copy/20240923 Auswertung alle Seq je erzeugt final2.xlsx"
+  excel_file_path_csv : "/scratch/miladm/N-450seq/results/csv-results/excel_output/excel_csv.csv"
+  excel_file_path_output : "/scratch/miladm/N-450seq/results/csv-results/excel_output/excel_output.csv"
+  df_xsl_ausland_file : '/scratch/miladm/N-450seq/results/csv-results/excel_output/df_xsl_ausland.csv'
+  df_xsl_de_file : '/scratch/miladm/N-450seq/results/csv-results/excel_output/df_xsl_de.csv'
+
+Extract_folder:
+  merged_file_path : '/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/merged_data_xsl_seq.csv'
+  de_matched_rows : '/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/de_matched_both_only.csv'
+  de_filtered_material : '/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/de_filtered.csv'
+  de_remained_rows : '/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/de_remained_rows.csv'
+  xsl_de_unmatched_file_path_output : "/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/de_xsl_unmatched_left_only.csv"
+  seq_de_unmatched_file_path_output : "/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/de_seq_unmatched_right_only.csv"
+  rep_IDs_file : '/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/'
+  de_post_remained_rows: '/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/de_post_remained_rows.csv'
+
+MSA_folder_path:
+  MSA_output_folder : "/scratch/miladm/N-450seq/results/csv-results/MSA-results/filtered"
+
+
+
+extraction_abbreviation:
+  Lung:
+    - Lungenmaterial in Flüssigkeit
+    - Lungenmaterial in DMEM
+    - Lungenmaterial in Gel
+    - Lungenmaterial trocken
+    - Lungenmaterial 1
+    - Lungenmaterial 2
+    - Lungenmaterial 3
+    - Lungenmaterial 4
+    - RNA aus Lunge
+    - cDNA aus Lunge
+    - Lungenbiopsie
+    - Lungenmaterial
+    - Bronchus
+    - Lunge
+  anderes absterich:
+    - Nasopharyngealabstrich
+    - Nasenabstrich
+    - Mundabstrich
+    - Trachea Abstr
+    - Trachea
+  Serum:
+    - Serum (S laut MaMuRoe)
+    - RNA Serum
+    - Bserum
+    - Serum  
+  Plasma:
+    - RNA aus Plasma
+    - RNA Plasma
+    - RNA Pl
+    - Plasma
+  Oral Fluid:
+    - cDNA aus Oral fluid
+    - RNA aus Oral fluid
+    - oral fluid
+    - OF
+  Wangenabstrich:
+    - Wangenabstrich in Flüssigkeit
+    - Wangenabstrich in Gel
+    - cDNA aus Wangenabstrich
+    - Wangenabstrich trocken
+    - RNA aus Wangenabstrich
+    - Filterpapier WA
+    - Wangenabstrich 1
+    - ZKÜ-Wa
+    - FTA card Wa
+    - RNA W
+    - RNA Wa
+    - cDNA W
+    - FTA W
+    - W (FTA)
+    - .01 W
+    - .01 Wa
+    - .02 W
+    - Wangenabstrich
+    - Wsp
+    - WA
+    - Wa
+    - WgAbstrich
+    - Wngabstrich
+    - WgAbstr
+    - Wngabstr
+  Urine:
+    - ZKÜ-Urin (kein Mat. in MaMuRoe)
+    - Urinsediment in DMEM
+    - cDNA aus Urin
+    - RNA Urin
+    - ZKUEU
+    - ZKUE U
+    - ZKÜ-Urin
+    - RNA U
+    - cDNA U
+    - FTA U
+    - .04 U
+    - .03 U
+    - .02 U
+    - .01 U
+    - Urin 1
+    - Urine
+    - Urin
+  Rachenabstrich:
+    - Rachenabstrich in Flüssigkeit
+    - Rachenabstrich in Gel
+    - cDNA aus Rachenabstrich
+    - Rachenabstrich trocken
+    - RNA aus Rachenabstrich
+    - Filterpapier RA
+    - Rachenabstrich 1
+    - ZKÜ-Ra
+    - ZKÜ-R
+    - ZKÜ-Ra
+    - FTA card Ra
+    - RNA R
+    - R RNA
+    - RNA Ra
+    - cDNA R
+    - R (FTA)
+    - Rachenabstrich
+
+Other_Abbreviations:
+  Other:
+    - RNA
+    - ZKUE
+  Urine:
+    - U
+  Rachenabstrich:
+    - .01 R
+    - .01 Ra
+    - .02 R
+    - .03 R
+    - Rsp
+    - RA
+    - Ra
+    - R
+    - Ra
+    - ZKUE R 
+    - ZKUER
+    - FTA R
+
+
+    

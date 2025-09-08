@@ -1,0 +1,81 @@
+from Bio import SeqIO
+import os
+import glob
+import yaml
+import shutil
+import pandas as pd
+import FastaValidator
+import subprocess
+import csv
+from collections import Counter
+from marshmallow import fields, ValidationError
+import matplotlib.pyplot as plt
+import xlrd
+import re
+import numpy as np
+from Bio.Emboss.Applications import *
+import subprocess
+import sys
+sys.path.append("/home/miladm/.vscode-server/data/Machine/")
+from results.DataManipulation_class import *
+
+
+config_path = '/home/miladm/.vscode-server/data/Machine/Data_curation/config.yaml'
+with open(config_path, "r") as config_file:
+    config = yaml.safe_load(config_file)
+
+class Seq_differentitation:
+
+    def __init__(self, duplicated_df: pd.DataFrame, df: pd.DataFrame ,cfg: dict):
+        self.df = df
+        self.duplicated_df = duplicated_df
+        self.cfg = cfg 
+        self.extractor = ExtractSeqToExcel(config)  
+    
+    def duplicated_sequence_MSA(self, duplicated_df: pd.DataFrame, df: pd.DataFrame):
+        duplicated_ids = set(duplicated_df['ID_seq_prefix'])
+
+        for duplicated_id in duplicated_ids:
+            df_filtered = df[df['ID_seq_prefix'] == duplicated_id]
+            if len(df_filtered) > 1:
+                sequences = []
+                for index, row in df_filtered.iterrows():
+                    fasta_path = row['FullPath']
+                    with open(fasta_path, "r") as fasta_file:
+                        sequences.extend(list(SeqIO.parse(fasta_file, "fasta")))
+                
+                with open(f"{duplicated_id}_sequences.fasta", "w") as fasta_output:
+                    SeqIO.write(sequences, fasta_output, "fasta")
+                
+                output_path = os.path.join(self.cfg["MSA_folder_path"]['MSA_output_folder'], f"{duplicated_id}_differences.txt")
+                with open(output_path, "w") as output_file:
+                    for i in range(len(sequences)):
+                        for j in range(i + 1, len(sequences)):
+                            seq1 = sequences[i]
+                            seq2 = sequences[j]
+                            # Perform your sequence comparison logic here
+                            output_file.write(f"Comparing sequence {seq1.id} with {seq2.id}\n")
+                            # Example: write the sequences
+                            output_file.write(f"{seq1.seq}\n")
+                            output_file.write(f"{seq2.seq}\n")
+                            # Example: write the differences
+                            differences = [f"{pos}: {a} -> {b}" for pos, (a, b) in enumerate(zip(seq1.seq, seq2.seq)) if a != b]
+                            output_file.write("\n".join(differences) + "\n\n")
+                
+
+    def duplicated_sequence_results(self):
+        self.extractor.apply_seq_to_excel() 
+        self.duplicated_sequence_MSA(self.duplicated_df, self.df)  
+
+duplicated_de_post_remained_ID = pd.read_csv("/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/duplicated_de_post_remained_ID.csv")  # Replace with actual read_csv
+post_remained_rows = pd.read_csv("/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/de_post_remained_rows.csv")  # Replace with actual read_csv
+#msa_duplicate = Seq_differentitation(duplicated_de_post_remained_ID, post_remained_rows, config)
+#msa_duplicate.duplicated_sequence_results()
+
+de_filtered = pd.read_csv("/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/de_filtered.csv")  # Replace with actual read_csv
+duplicated_de_filtered_ID = pd.read_csv("/scratch/miladm/N-450seq/results/csv-results/extracted_seq_xsl/duplicated_de_filtered_ID.csv")  # Replace with actual read_csv
+
+msa_duplicate_filtered = Seq_differentitation(duplicated_de_filtered_ID, de_filtered, config)
+msa_duplicate_filtered.duplicated_sequence_results()
+   
+        

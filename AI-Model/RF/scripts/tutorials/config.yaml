@@ -1,0 +1,7 @@
+Directory:
+  Input_Parent_Folder: "$SLURM_TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees"
+  Input_Tree_Folder: "$SLURM_TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees"
+  Input_Tree_File: "$SLURM_TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEID_p_1.full.trees"
+  Output_Tree_File: "/home/miladm/scratch/git/AI-models/RF/RF-measles-simulation/results/tree_stats/init-trials-output.csv"
+
+

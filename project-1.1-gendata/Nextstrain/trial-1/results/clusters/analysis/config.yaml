@@ -1,0 +1,4 @@
+paths:
+    input_path: /Users/MiladM-Dev/Documents/1PhD/project-1-N450/project-1.1-gendata/Nextstrain/trial-1/results/clusters/data/
+    output_path: /Users/MiladM-Dev/Documents/1PhD/project-1-N450/project-1.1-gendata/Nextstrain/trial-1/results/clusters/analysis/
+file_name: aligned_B3_rep

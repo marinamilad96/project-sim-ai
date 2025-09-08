@@ -1,0 +1,6 @@
+Directory:
+  Input_Parent_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees"
+  Input_Tree_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees"
+  Input_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/excel/SEIR_1.trees"
+  Output_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/summary-height-length.csv"
+  Output_Nexus_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/combined.full.trees"

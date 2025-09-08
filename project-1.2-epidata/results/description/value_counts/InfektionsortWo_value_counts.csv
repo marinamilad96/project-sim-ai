@@ -1,0 +1,505 @@
+InfektionsortWo,count
+Deutschland,9039
+SK Duisburg,1003
+SK München,648
+SK Hamburg,357
+SK Berlin Friedrichshain-Kreuzberg,329
+SK Berlin Reinickendorf,311
+LK Ortenaukreis,301
+SK Berlin Neukölln,290
+SK Berlin Mitte,285
+SK Berlin Pankow,245
+LK Wesel,221
+SK Essen,215
+SK Berlin Tempelhof-Schöneberg,212
+SK Stuttgart,204
+SK Mönchengladbach,182
+SK Berlin Steglitz-Zehlendorf,176
+SK Düsseldorf,173
+SK Köln,169
+SK Frankfurt am Main,167
+SK Berlin Charlottenburg-Wilmersdorf,136
+LK München,136
+SK Dortmund,133
+SK Berlin Spandau,132
+SK Berlin Lichtenberg,132
+LK Weilheim-Schongau,115
+SK Dresden,115
+SK Leipzig,114
+LK Mettmann,114
+LK Landsberg a.Lech,113
+LK Rosenheim,113
+SK Berlin Treptow-Köpenick,108
+SK Berlin Marzahn-Hellersdorf,107
+SK Offenbach,101
+LK Wetteraukreis,101
+SK Mülheim a.d.Ruhr,90
+Italien,86
+LK Viersen,86
+LK Garmisch-Partenkirchen,85
+LK Mühldorf a.Inn,85
+LK Fürstenfeldbruck,84
+SK Freiburg i.Breisgau,83
+Rumänien,82
+Schweiz,80
+LK Lörrach,80
+LK Rhein-Erft-Kreis,79
+Frankreich,77
+LK Konstanz,75
+-nicht ermittelbar-,74
+LK Dachau,73
+LK Passau,71
+LK Esslingen,69
+LK Ravensburg,65
+SK Krefeld,63
+LK Rhein-Sieg-Kreis,62
+SK Oberhausen,60
+SK Gelsenkirchen,59
+LK Stadtverband Saarbrücken,57
+LK Ludwigsburg,57
+LK Paderborn,56
+SK Leverkusen,56
+LK Starnberg,55
+LK Bad Tölz-Wolfratshausen,55
+Region Hannover,54
+LK Erding,52
+SK Wuppertal,52
+LK Ebersberg,51
+LK Märkischer Kreis,50
+Sachsen,49
+LK Breisgau-Hochschwarzwald,49
+LK Freising,48
+LK Traunstein,48
+SK Potsdam,45
+LK Karlsruhe,45
+Berlin,44
+LK Hildesheim,44
+LK Rhein-Kreis Neuss,44
+SK Nürnberg,44
+LK Offenbach,41
+LK Euskirchen,41
+LK Harburg,41
+Thailand,40
+LK Oberallgäu,39
+LK Unna,39
+SK Weimar,39
+SK Fürth,39
+LK Borken,38
+Indien,38
+LK Oberbergischer Kreis,38
+LK Gießen,37
+LK Rottal-Inn,36
+LK Schwäbisch Hall,36
+SK Wiesbaden,36
+LK Kleve,36
+Russische Föderation,35
+LK Main-Kinzig-Kreis,34
+LK Oder-Spree,34
+Baden-Württemberg,34
+SK Bonn,34
+Ukraine,34
+LK Hochsauerlandkreis,33
+LK Oberhavel,33
+SK Halle,32
+LK Bodenseekreis,32
+LK Rheinisch-Bergischer Kreis,32
+LK Potsdam-Mittelmark,32
+LK Osnabrück,32
+LK Gütersloh,31
+Bosnien und Herzegowina,31
+LK Recklinghausen,30
+LK Miltenberg,30
+SK Bochum,30
+LK Unterallgäu,29
+Österreich,28
+Spanien,28
+LK Lahn-Dill-Kreis,28
+LK Würzburg,28
+LK Segeberg,27
+SK Kiel,26
+LK Waldshut,26
+LK Enzkreis,25
+Türkei,25
+LK Ennepe-Ruhr-Kreis,25
+SK Karlsruhe,24
+LK Marburg-Biedenkopf,24
+LK Barnim,23
+LK Landshut,23
+LK Germersheim,23
+SK Bremen,22
+LK Main-Taunus-Kreis,22
+LK Rastatt,22
+LK Mittelsachsen,22
+Hamburg,22
+Indonesien,22
+LK Eichsfeld,22
+LK Augsburg,21
+SK Augsburg,21
+Vereinigtes Königreich,21
+SK Bielefeld,21
+LK Pinneberg,21
+LK Heilbronn,21
+China,21
+LK Lippe,21
+LK Hochtaunuskreis,21
+LK Heinsberg,20
+LK Ostallgäu,20
+LK Emsland,20
+LK Tübingen,20
+LK Rhein-Neckar-Kreis,19
+StädteRegion Aachen,19
+SK Jena,19
+LK Soest,19
+Kroatien,19
+LK Forchheim,19
+SK Heidelberg,18
+SK Lübeck,18
+SK Suhl,18
+SK Hagen,18
+LK Neuburg-Schrobenhausen,17
+LK Main-Spessart,17
+SK Mannheim,17
+LK Donnersbergkreis,17
+LK Lüneburg,16
+Niederlande,16
+LK Leer,16
+Polen,16
+LK Limburg-Weilburg,16
+LK Stade,16
+-nicht erhoben-,16
+LK Biberach,16
+LK Fürth,16
+Serbien,16
+SK Neumünster,16
+Vietnam,16
+Ägypten,15
+LK Vogtlandkreis,15
+LK Berchtesgadener Land,15
+LK Sigmaringen,15
+LK Aschaffenburg,15
+LK Aichach-Friedberg,15
+LK Erlangen-Höchstadt,15
+LK Heidekreis,15
+LK Teltow-Fläming,14
+SK Pforzheim,14
+LK Northeim,14
+LK Tuttlingen,14
+LK Düren,14
+LK Donau-Ries,14
+SK Heilbronn,14
+LK Cloppenburg,13
+LK Dahme-Spreewald,13
+LK Göttingen (alt),13
+LK Schwalm-Eder-Kreis,13
+LK Mayen-Koblenz,13
+Pakistan,13
+LK Dingolfing-Landau,13
+LK Coesfeld,13
+Bulgarien,12
+LK Nürnberger Land,12
+SK Würzburg,12
+Philippinen,12
+LK Neckar-Odenwald-Kreis,12
+SK Kassel,12
+LK Holzminden,12
+LK Nienburg (Weser),12
+LK Weimarer Land,12
+Marokko,12
+LK Roth,12
+LK Wittenberg,12
+SK Landau i.d.Pfalz,11
+LK Rhein-Lahn-Kreis,11
+LK Ostalbkreis,11
+SK Erfurt,11
+SK Bottrop,11
+LK Schwarzwald-Baar-Kreis,11
+LK Steinfurt,11
+LK Siegen-Wittgenstein,11
+SK Remscheid,11
+LK Bad Dürkheim,11
+LK Plön,11
+SK Koblenz,11
+LK Rems-Murr-Kreis,11
+LK Göppingen,11
+LK Neu-Ulm,10
+LK Ostprignitz-Ruppin,10
+LK Cuxhaven,10
+LK Bautzen,10
+LK Rheingau-Taunus-Kreis,10
+LK Miesbach,10
+Kasachstan,10
+LK Altmarkkreis Salzwedel,10
+LK Minden-Lübbecke,10
+LK Odenwaldkreis,10
+LK Bad Kreuznach,9
+LK Cham,9
+SK Flensburg,9
+LK Lindau,9
+LK Märkisch-Oderland,9
+LK Ostholstein,9
+LK Calw,9
+SK Baden-Baden,9
+LK Bernkastel-Wittlich,8
+LK Deggendorf,8
+SK Chemnitz,8
+LK Havelland,8
+LK Gotha,8
+LK Schleswig-Flensburg,8
+LK Böblingen,8
+SK Emden,8
+LK Nordfriesland,8
+LK Westerwaldkreis,8
+SK Solingen,8
+LK Cochem-Zell,8
+Ausland (Land unbekannt),8
+Südafrika (Staat),8
+LK Schweinfurt,8
+LK Fulda,8
+SK Münster,7
+Dänemark,7
+Aserbaidschan,7
+LK Südliche Weinstraße,7
+LK Bad Kissingen,7
+SK Magdeburg,7
+LK Emmendingen,7
+LK Regensburg,7
+LK Darmstadt-Dieburg,7
+LK Zollernalbkreis,7
+LK Ludwigslust-Parchim,7
+SK Aachen,7
+SK Landshut,7
+SK Darmstadt,7
+LK Rhein-Pfalz-Kreis,6
+LK Kassel,6
+SK Ulm,6
+LK Ansbach,6
+Bayern,6
+Weißrussland/Belarus,6
+Georgien,6
+SK Regensburg,6
+Griechenland,6
+LK Oldenburg,6
+LK Kitzingen,6
+LK Alb-Donau-Kreis,6
+LK Alzey-Worms,6
+LK Bergstraße,6
+Asien,6
+LK Schwandorf,6
+LK Osterholz,6
+Afghanistan,6
+LK Ammerland,6
+Singapur,5
+LK Vechta,5
+LK Höxter,5
+LK Verden,5
+Nordmazedonien,5
+SK Oldenburg,5
+LK Rhön-Grabfeld,5
+LK Pfaffenhofen a.d.Ilm,5
+LK Stormarn,5
+LK Herford,5
+Bangladesch,5
+SK Erlangen,5
+LK Altenkirchen,5
+LK Aachen,5
+Hessen,5
+LK Saalekreis,5
+LK Peine,5
+SK Bamberg,5
+LK Diepholz,5
+LK Rotenburg (Wümme),5
+LK Burgenlandkreis,5
+SK Herne,5
+LK Freudenstadt,5
+LK Steinburg,5
+SK Bremerhaven,5
+LK Bamberg,4
+SK Kaufbeuren,4
+LK Zwickau,4
+Japan,4
+LK Haßberge,4
+LK Sächsische Schweiz-Osterzgebirge,4
+LK Olpe,4
+Vereinigte Arabische Emirate,4
+LK Dillingen a.d.Donau,4
+SK Cottbus,4
+LK Eichstätt,4
+Uganda,4
+LK Saale-Holzland-Kreis,4
+LK Herzogtum Lauenburg,4
+LK Reutlingen,4
+LK Celle,4
+LK Waldeck-Frankenberg,4
+LK Mecklenburg-Strelitz,4
+SK Kempten,4
+SK Schwabach,4
+Äthiopien,4
+LK Kelheim,4
+SK Mainz,4
+LK Warendorf,4
+LK Jerichower Land,4
+LK Goslar,4
+SK Schweinfurt,4
+LK Werra-Meißner-Kreis,4
+LK Saarlouis,3
+LK Kyffhäuserkreis,3
+SK Weiden i.d.OPf.,3
+Kosovo,3
+Kirgisistan,3
+Nordrhein-Westfalen,3
+SK Amberg,3
+SK Osnabrück,3
+Malta,3
+LK Neumarkt i.d.OPf.,3
+LK Mecklenburgische Seenplatte,3
+SK Neustadt a.d.Weinstraße,3
+SK Frankfurt (Oder),3
+Europa,3
+LK Vorpommern-Rügen,3
+Kenia,3
+LK Neuwied,3
+LK Friesland,3
+LK Heidenheim,3
+USA,3
+LK Günzburg,3
+LK Hildburghausen,3
+Tansania,3
+LK Groß-Gerau,3
+LK Dithmarschen,3
+LK Schaumburg,3
+LK Regen,3
+LK Rottweil,3
+LK Freyung-Grafenau,3
+Libanon,3
+LK Altötting,3
+LK Uckermark,3
+LK Straubing-Bogen,3
+Belgien,3
+LK Schmalkalden-Meiningen,2
+LK Ilm-Kreis,2
+LK Südwestpfalz,2
+Kamerun,2
+LK Vorpommern-Greifswald,2
+Myanmar,2
+Brasilien,2
+LK Unstrut-Hainich-Kreis,2
+LK Hameln-Pyrmont,2
+LK Görlitz,2
+Kambodscha,2
+LK Leipzig,2
+Schweden,2
+LK Weißenburg-Gunzenhausen,2
+LK Osterode am Harz,2
+Albanien,2
+LK Kaiserslautern,2
+Mongolei,2
+LK Altenburger Land,2
+LK Ostvorpommern,2
+LK Rhein-Hunsrück-Kreis,2
+Dschibuti,2
+Dominica,2
+SK Delmenhorst,2
+LK Main-Tauber-Kreis,2
+Somalia,2
+Niedersachsen,2
+LK Meißen,2
+LK Saalfeld-Rudolstadt,2
+LK Erzgebirgskreis,2
+SK Rostock,2
+LK Müritz,2
+SK Ludwigshafen,2
+Saudi-Arabien,2
+SK Rosenheim,2
+LK Kulmbach,2
+LK Gifhorn,2
+Monaco,2
+LK Salzlandkreis,2
+LK Merzig-Wadern,2
+SK Worms,2
+LK Nordwestmecklenburg (alt),2
+Irland,2
+Australien (Staat),2
+Neuseeland,2
+LK Aurich,2
+LK Mainz-Bingen,2
+SK Wolfsburg,2
+Ungarn,2
+LK Saarpfalz-Kreis,2
+LK Bad Doberan,2
+SK Braunschweig,2
+Tschechien,2
+Israel,2
+SK Aschaffenburg,2
+Mali,2
+Madagaskar,1
+SK Ingolstadt,1
+SK Salzgitter,1
+Oman,1
+SK Kaiserslautern,1
+Mecklenburg-Vorpommern,1
+Kuba,1
+Sudan,1
+Saarland,1
+"Kongo, Republik (""Kongo Brazzaville"")",1
+SK Stralsund,1
+LK Wittmund,1
+SK Brandenburg a.d.Havel,1
+LK Börde,1
+Sachsen-Anhalt,1
+Irak,1
+Südostasien,1
+LK Kronach,1
+Algerien,1
+LK Hersfeld-Rotenburg,1
+LK Neustadt a.d.Aisch-Bad Windsheim,1
+Slowakei,1
+Schleswig-Holstein,1
+LK Göttingen,1
+"Moldau, Republik",1
+Armenien,1
+SK Trier,1
+Brandenburg,1
+SK Straubing,1
+LK Sonneberg,1
+SK Frankenthal,1
+LK Bitburg-Prüm,1
+Luxemburg,1
+Syrien,1
+SK Hamm,1
+LK Mansfeld-Südharz,1
+SK Memmingen,1
+SK Bayreuth,1
+LK Vogelsbergkreis,1
+LK Uecker-Randow,1
+SK Schwerin,1
+Norwegen,1
+LK Tirschenreuth,1
+LK Ludwigslust,1
+Seychellen,1
+LK Demmin,1
+Kanada,1
+LK Bayreuth,1
+LK Birkenfeld,1
+SK Passau,1
+Palästinensische Gebiete,1
+LK Kusel,1
+SK Wilhelmshaven,1
+LK Rügen,1
+LK Nordvorpommern,1
+Zypern,1
+Malaysia,1
+LK Sömmerda,1
+Slowenien,1
+LK Sankt Wendel,1
+LK Spree-Neiße,1
+LK Ahrweiler,1
+Nepal,1
+Sierra Leone,1
+LK Rendsburg-Eckernförde,1
+LK Harz,1
+Sri Lanka,1
+SK Gera,1
+Libyen,1
+LK Lichtenfels,1
+SK Neubrandenburg,1
+LK Saale-Orla-Kreis,1
