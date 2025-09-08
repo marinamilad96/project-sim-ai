@@ -1,0 +1,63 @@
+# XML_config.yaml
+Directory:
+  Input_Parent_Folder: "/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/Data/init-simulations-densitree/trial1/SEIDpm-excel"
+  Input_Tree_Folder: "/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/Data/init-simulations-densitree/trial1/SEIDpm-excel"
+  Input_Tree_File: "/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/Data/init-simulations-densitree/trial1/SEIDpm-excel/excel/SEIR_1.trees"
+  Output_Tree_File: "/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/Data/init-simulations-densitree/trial1/SEIDpm-excel/summary-height-length.csv"
+  Output_Nexus_File: "/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/Data/init-simulations-densitree/trial1/SEIDpm-excel/combined.full.trees"
+
+FilePath:
+  CSVFilePath: "/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/Data/init-simulations-densitree/trial1/SEIDpm-excel/SEIDpm-S10k-inf0.001-Oinfx-Mx.csv"
+  outputFilePath: "/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/Data/init-simulations-densitree/trial1/SEIDpm-excel"
+
+beast:
+  version: "2.0"
+  namespace: "beast.base.inference.parameter:beast.base.inference:remaster"
+
+run:
+  spec: "Simulator"
+  nSims: "1"
+  simulate:
+    spec: "SimulatedTree"
+    id: "tree"
+    trajectory:
+      spec: "StochasticTrajectory"
+      id: "traj"
+      population:
+        spec_S: "100"
+        spec_E: "0"
+        spec_I: "1"
+      samplePopulation:
+        spec_R: "0"
+        spec_sample: "1"
+      reaction:
+        spec_I_E_rate: "2.1"
+        spec_E_I_rate: "0.083"
+        spec_R_rate: "0.14"
+        spec_sampling_rate: "0.057"
+
+  loggers:
+    - spec: "Logger"
+      fileName: "$(filebase).traj"
+      logs:
+        - idref: "traj"
+
+    - spec: "Logger"
+      mode: "tree"
+      fileName: "$(filebase).full.trees"
+      logs:
+        - spec: "TypedTreeLogger"
+          tree:
+            spec: "PrunedTree"
+            samplePops: "R"
+            simulatedTree: "@tree"
+
+    - spec: "Logger"
+      mode: "tree"
+      fileName: "$(filebase).sampled.trees"
+      logs:
+        - spec: "TypedTreeLogger"
+          tree:
+            spec: "PrunedTree"
+            samplePops: "sample"
+            simulatedTree: "@tree"
