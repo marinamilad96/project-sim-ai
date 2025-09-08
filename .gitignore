@@ -11,3 +11,7 @@ Data/
 *.fasta
 
 .DS_Store
+description
+HEAD
+config
+
