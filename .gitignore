@@ -5,6 +5,7 @@ Data/
 *.nwk
 *.traj
 *.xml
+*.nex
 #Ignore png files
 *.png
 #Ignore fasta files

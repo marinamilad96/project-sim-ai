@@ -1,3 +1,0 @@
-/scratch/miladm/N-450seq/results/converted-fasta/B2/05-01027.fasta
-Exit code: 0
-
