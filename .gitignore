@@ -1,6 +1,7 @@
 #Ignore Data files
 Data/
 !Data/*.xml
+ 
 logs/
 #Ignore tree files
 *.trees
