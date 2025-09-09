@@ -12,8 +12,10 @@ hpc-mount wissdaten
 mkdir -p logs
 source $(conda info --base)/etc/profile.d/conda.sh 
 conda activate /home/miladm/scratch/.conda/envs/beast
+
+cd /home/miladm/scratch/project-sim-ai
 # Run BEAST
 #python3 /home/miladm/scratch/git/measles_simulations/Scripts/run_all.py
 #python3 /home/miladm/scratch/project-sim-ai/beast-simulation/Scripts/generate-plots/box-time-df-plot-specification.py
-python3 /home/miladm/scratch/project-sim-ai/beast-simulation/Scripts/generate-plots/box-h-l-df-plot.py
+python3 /home/miladm/scratch/project-sim-ai/beast-simulation/Scripts/generate-plots/box-h-l-df-plot-specification.py
 hpc-umount wissdaten
