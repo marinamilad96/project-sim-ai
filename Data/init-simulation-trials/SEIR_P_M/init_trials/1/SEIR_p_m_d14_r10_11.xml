@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<beast version="2.0" namespace="beast.base.inference.parameter:beast.base.inference:remaster">
+  <run spec="Simulator" nSims="1">
+    <simulate spec="SimulatedTree" id="tree">
+      <trajectory spec="StochasticTrajectory" id="traj">
+        <population spec="RealParameter" id="S" value="1000000 1000000" dimension="2" />
+        <population spec="RealParameter" id="E" value="0 1" dimension="2" />
+        <population spec="RealParameter" id="I" value="0" dimension="2" />
+        <samplePopulation spec="RealParameter" id="R" value="0" dimension="2" />
+        <samplePopulation spec="RealParameter" id="sample" value="0" />
+        <plate var="i" range="0:1">
+          <reaction spec="Reaction" rate="0.083">E[$(i)]:1 -&gt; I[$(i)]:1</reaction>
+          <reaction spec="Reaction" rate="0.0714">I[$(i)] -&gt; R[$(i)]</reaction>
+          </plate>
+        <reaction spec="Reaction" rate="0.698">S[0] + I[0]:1 -&gt; I[0]:1 + E[0]:1</reaction>
+        <reaction spec="Reaction" rate="0.032221">I[0]:1 -&gt; R[0] + sample[0]:1</reaction>
+        <reaction spec="Reaction" rate="0.698">S[1] + I[1]:1 -&gt; I[1]:1 + E[1]:1</reaction>
+        <reaction spec="Reaction" rate="0.0001">I[1]:1 -&gt; I[0]:1</reaction>
+        </trajectory>
+      </simulate>
+    <logger spec="Logger" fileName="$(filebase)-$(seed).traj" logEvery="7">
+      <log idref="traj" />
+      </logger>
+    </run>
+  </beast>

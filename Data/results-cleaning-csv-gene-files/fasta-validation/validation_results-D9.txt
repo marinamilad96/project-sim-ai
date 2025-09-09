@@ -1,0 +1,51 @@
+/scratch/miladm/N-450seq/results/converted-fasta/D9/13-00780.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/13-00779.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/13-00778.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/12-00354.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/12-00001R.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/09-00178.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/08-00753.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/08-00748.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/08-00746.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/08-00745.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/06-00734.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/05-00186 456 bp.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/24-01333.01 FTA.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/20-00825.01 FTA.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/19-01155.01 FTA.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/14-00279RU.fasta
+Exit code: 0
+
+/scratch/miladm/N-450seq/results/converted-fasta/D9/14-00111_Ma-3.fasta
+Exit code: 0
+

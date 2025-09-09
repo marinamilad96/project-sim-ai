@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<beast version="2.0" namespace="beast.base.inference.parameter:beast.base.inference:remaster">
+  <run spec="Simulator" nSims="1">
+    <simulate spec="SimulatedTree" id="tree">
+      <trajectory spec="StochasticTrajectory" id="traj" endsWhen="D[0] == 11000">
+        <population spec="RealParameter" id="S" value="10000 10000" dimension="2" />
+        <population spec="RealParameter" id="E" value="0 1" dimension="2" />
+        <population spec="RealParameter" id="I" value="0" dimension="2" />
+        <samplePopulation spec="RealParameter" id="D" value="0" dimension="2" />
+        <samplePopulation spec="RealParameter" id="sample" value="0" />
+        <plate var="i" range="0:1">
+          <reaction spec="Reaction" rate="0.083">E[$(i)]:1 -&gt; I[$(i)]:1</reaction>
+          </plate>
+        <reaction spec="Reaction" rate="0.714">I[0] -&gt; D[0]</reaction>
+        <reaction spec="Reaction" rate="0.0698">S[0] + I[0]:1 -&gt; I[0]:1 + E[0]:1</reaction>
+        <reaction spec="Reaction" rate="0.032221">I[0]:1 -&gt; D[0] + sample[0]:1</reaction>
+        <reaction spec="Reaction" rate="0.0698">S[1] + I[1]:1 -&gt; I[1]:1 + E[1]:1</reaction>
+        <reaction spec="Reaction" rate="0.000714">I[1] -&gt; D[1]</reaction>
+        <reaction spec="Reaction" rate="0.01">I[1]:1 -&gt; I[0]:1</reaction>
+        </trajectory>
+      </simulate>
+    <logger spec="Logger" fileName="$(filebase)-$(seed).traj">
+      <log idref="traj" />
+      </logger>
+    <logger spec="Logger" mode="tree" fileName="$(filebase).full.trees">
+      <log spec="TypedTreeLogger">
+        <tree spec="PrunedTree" samplePops="D" simulatedTree="@tree" />
+        </log>
+      </logger>
+    <logger spec="Logger" mode="tree" fileName="$(filebase).sampled.trees">
+      <log spec="TypedTreeLogger">
+        <tree spec="PrunedTree" samplePops="sample" simulatedTree="@tree" />
+        </log>
+      </logger>
+    </run>
+  </beast>

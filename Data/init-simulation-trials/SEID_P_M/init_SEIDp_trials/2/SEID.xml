@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<beast version="2.0" namespace="beast.base.inference.parameter:beast.base.inference:remaster">
+  <run spec="Simulator" nSims="1">
+    <simulate spec="SimulatedTree" id="tree">
+      <trajectory spec="StochasticTrajectory" id="traj" > <!--  maxTime="100"-->
+        <population spec="RealParameter" id="S" value="10000" />
+        <population spec="RealParameter" id="E" value="1" />
+        <population spec="RealParameter" id="I" value="0" />
+        <samplePopulation spec="RealParameter" id="D" value="0" />
+        <samplePopulation spec="RealParameter" id="sample" value="0" />
+        <!-- Germany-->
+        <reaction spec="Reaction" rate="0.0001"> I + S -> I + E </reaction> <!-- Infection -->
+        <!--<reaction spec="Reaction" rate="1"> E -> S </reaction>  Birth -->
+        <reaction spec="Reaction" rate="0.0893"> E -> I </reaction> <!-- Incubation -->
+        <reaction spec="Reaction" rate="0.14"> I -> D </reaction> <!-- Diagnosis/Death -->
+        <!-- optionally keep -->
+        <reaction spec="Reaction" rate="0.032221"> I -> D + sample </reaction> <!-- Diagnosed and sampled -->
+
+        
+
+        </trajectory>
+      </simulate>
+    <logger spec="Logger" fileName="$(filebase)-S10k-inf0.0001-$(seed).traj" >
+      <log idref="traj" />
+      </logger>
+    <logger spec="Logger" mode="tree" fileName="$(filebase)-S10k-inf0.0001-$(seed).full.trees" >
+      <log spec="TypedTreeLogger">
+        <tree spec="PrunedTree" samplePops="D" simulatedTree="@tree" />
+        </log>
+      </logger>
+    <logger spec="Logger" mode="tree" fileName="$(filebase)-S10k-inf0.0001-$(seed).sampled.trees" >
+      <log spec="TypedTreeLogger">
+        <tree spec="PrunedTree" samplePops="sample" simulatedTree="@tree" />
+        </log>
+      </logger>
+    </run>
+  </beast>

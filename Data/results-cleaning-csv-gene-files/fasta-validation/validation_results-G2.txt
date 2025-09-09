@@ -1,0 +1,3 @@
+/scratch/miladm/N-450seq/results/converted-fasta/G2/05-00185 456 bp.fasta
+Exit code: 0
+
