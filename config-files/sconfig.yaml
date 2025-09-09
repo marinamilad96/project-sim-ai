@@ -1,14 +1,14 @@
 # XML_config.yaml
 Directory:
-  Input_Parent_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees"
-  Input_Tree_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees"
-  Input_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/excel/SEIR_1.trees"
-  Output_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/summary-height-length.csv"
-  Output_Nexus_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/combined.full.trees"
+  Input_Parent_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx"
+  Input_Tree_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx"
+  Input_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/excel/SEIR_1.trees"
+  Output_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/summary-height-length.csv"
+  Output_Nexus_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/combined.full.trees"
   
 FilePath:
-  CSVFilePath: "/home/miladm/scratch/git/measles_simulations/init-simulations-densitree/trial1/SEIDpm-excel/SEIDpm-S10k-inf0.001-Oinfx-Mx.csv"
-  outputFilePath: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/"
+  CSVFilePath: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/SEIDpm-S10k-inf0.001-Oinfx-Mx.csv"
+  outputFilePath: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/"
 
 beast:
   version: "2.0"
