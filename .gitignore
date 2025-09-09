@@ -1,5 +1,6 @@
 #Ignore Data files
 Data/
+logs/
 #Ignore tree files
 *.trees
 *.nwk
