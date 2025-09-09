@@ -1,8 +1,18 @@
-#Ignore Data files
+# Ignore everything in Data directory except XML files
 Data/*
+!Data/**/
 !Data/**/*.xml
 
- 
+# Ignore all XML files except those in Data directory
+!*.xml
+Data/**/*.csv
+Data/**/*.png
+Data/**/*.fasta
+Data/**/*.nwk
+Data/**/*.trees
+Data/**/*.nex
+Data/**/*.traj
+
 logs/
 #Ignore tree files
 *.trees
