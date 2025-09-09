@@ -15,5 +15,5 @@ conda activate /home/miladm/scratch/.conda/envs/beast
 # Run BEAST
 #python3 /home/miladm/scratch/git/measles_simulations/Scripts/run_all.py
 #python3 /home/miladm/scratch/project-sim-ai/beast-simulation/Scripts/generate-plots/box-time-df-plot-specification.py
-python3 /home/miladm/scratch/project-sim-ai/beast-simulation/Scripts/generate-plots/box-height-length-df-plot.py
+python3 /home/miladm/scratch/project-sim-ai/beast-simulation/Scripts/generate-plots/box-h-l-df-plot.py
 hpc-umount wissdaten
