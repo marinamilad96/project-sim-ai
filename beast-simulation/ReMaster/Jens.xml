@@ -1,0 +1,33 @@
+<beast version="2.0" namespace="beast.base.inference.parameter:beast.base.inference:remaster">
+    <param id="R" spec="RealParameter" value="0.4976469005496965"/>
+    <param id="p" spec="RealParameter" value="0.18831305194482328"/>
+    <param id="mu" spec="feast.expressions.ExpCalculator" value="159.77091754154065"/>
+    <param id="psi" spec="RealParameter" value="0.4122605979962839"/>
+    <param id="delta" spec="feast.expressions.ExpCalculator" value="160.18317813953695"/>
+    <param id="lambda" spec="feast.expressions.ExpCalculator" value="79.71466212134047"/>
+    <run spec="Simulator" nSims="1">
+        <simulate spec="feast.simulation.SimulatedAlignment" outputFileName="Simulation_2961.nexus" sequenceLength="2609">
+            <siteModel spec="beast.base.evolution.sitemodel.SiteModel">
+                <substModel spec="beast.base.evolution.substitutionmodel.HKY" id="hky" kappa="2.4345385339148">
+                    <frequencies id="hky.frequencies" spec="beast.base.evolution.substitutionmodel.Frequencies" frequencies="0.18034848446164975 0.1891276360388007 0.39828712064201566 0.23223675885753403"/>
+                </substModel>
+            </siteModel>
+            <tree spec="SimulatedTree" id="tree">
+                <trajectory spec="StochasticTrajectory" id="traj" endsWhen="sample==100" mustHave="sample==100">
+                    <population spec="RealParameter" id="X" value="1"/>
+                    <samplePopulation spec="RealParameter" id="sample" value="0"/>
+                    <reaction spec="Reaction" rate="@lambda">X -> 2X</reaction>
+                    <reaction spec="Reaction" rate="@mu">X -> 0</reaction>
+                    <reaction spec="Reaction" rate="@psi">X -> sample</reaction>
+                </trajectory>
+            </tree>
+        </simulate>
+        <logger spec="Logger" fileName="Simulation_2961.traj" log="@traj"/>
+        <logger spec="Logger" mode="tree" fileName="Simulation_2961.trees">
+            <log spec="TypedTreeLogger" tree="@tree"/>
+        </logger>
+        <logger spec="Logger">
+            <log spec="beast.base.evolution.tree.TreeStatLogger" tree="@tree"/>
+        </logger>
+    </run>
+</beast>

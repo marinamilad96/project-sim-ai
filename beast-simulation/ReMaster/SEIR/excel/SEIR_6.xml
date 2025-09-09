@@ -1,0 +1,28 @@
+<!-- SEIR tree simulation with finite sampling window -->
+
+<beast version="2.0" namespace="beast.base.inference.parameter:beast.base.inference:remaster">
+    <run spec="Simulator" nSims="1">
+        <simulate spec="SimulatedTree" id="tree">
+            <trajectory spec="StochasticTrajectory" id="traj">
+                <population spec="RealParameter" id="S" value="100"/>
+                <population spec="RealParameter" id="E" value="0"/>
+                <population spec="RealParameter" id="I" value="1"/>
+                <population spec="RealParameter" id="R" value="0"/>
+                <samplePopulation spec="RealParameter" id="sample" value="1"/>
+
+                <reaction spec="Reaction" rate="2.1"> I + S -> I + E </reaction>
+                <reaction spec="Reaction" rate="0.083 0.08 0.073" changeTimes= "18 48" > E -> I </reaction>
+                <reaction spec="Reaction" rate="0.14"> I -> R </reaction>
+                <reaction spec="Reaction" rate="0.037 0.047 0.057" changeTimes="18 48"> I -> sample </reaction>
+            </trajectory>
+        </simulate>
+
+        <logger spec="Logger" fileName="$(filebase).traj">
+            <log idref="traj"/>
+        </logger>
+
+        <logger spec="Logger" mode="tree" fileName="$(filebase).trees">
+            <log spec="TypedTreeLogger" tree="@tree"/>
+        </logger>
+    </run>
+</beast>
