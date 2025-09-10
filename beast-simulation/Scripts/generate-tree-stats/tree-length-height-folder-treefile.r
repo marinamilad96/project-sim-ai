@@ -3,7 +3,7 @@ library(tidyr)
 library(yaml)
 
 
-config <- yaml::read_yaml("/Users/MiladM-Dev/Documents/1PhD/project-sim-ai/config-files/config.yaml")
+config <- yaml::read_yaml("../project-sim-ai/config-files/sconfig.yaml")
 
 config$Directory$Input_Tree_Folder <- gsub(
   "\\$TMPDIR", Sys.getenv("TMPDIR"), config$Directory$Input_Tree_Folder
@@ -16,11 +16,6 @@ config$Directory$Output_Tree_File <- gsub(
 
 # Define the path to the tree file and ensure the tree file exists, If it is not phylo format, you will need to convert it first to calculate statistics.
 tree_files <- list.files(config$Directory$Input_Tree_Folder, pattern = ".trees$", full.names = TRUE) # Extract only full trees (pattern = "\\.full\\.trees$")
-
-# Ensure there are tree files in the directory
-if (length(tree_files) == 0) {
-  stop("\n", "No tree files found in the specified directory.", "\n")
-}
 
 # Initialize a list to store stats
 all_results_height <- list()
@@ -52,7 +47,6 @@ for (file in tree_files) {
     all_results_length[[colname]] <- length_df
     print("Done storing results.")
 }
-
 
 # Combine all results side by side (columns)
 final_df_height <- do.call(cbind, all_results_height)

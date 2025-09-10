@@ -3,9 +3,9 @@ import yaml
 import pandas as pd
 import os
 
-os.environ.get('TMPDIR')
+
 # Load the YAML configuration file
-with open('/home/miladm/scratch/git/measles_simulations/Scripts/xml_config.yaml', 'r') as file:
+with open('/home/miladm/scratch/project-sim-ai/config-files/sconfig.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
 
@@ -14,7 +14,7 @@ class generate_xml_files:
         self.config = config
 
     def read_csv(self):
-        self.df = pd.read_csv(self.config["FilePath"]["CSVFilePath"])
+        self.df = pd.read_csv(os.path.expandvars(self.config["FilePath"]["CSVFilePath"]))
         return self.df
 
     def create_xml(self):
@@ -31,16 +31,16 @@ class generate_xml_files:
 
             # Create the root element
             root = ET.Element(
-                "beast", version=self.config['beast']['version'], namespace=self.config['beast']['namespace'])
+                "beast", version= "2.0", namespace="beast.base.inference.parameter:beast.base.inference:remaster")
 
             # Add a run element with sub-elements
             run = ET.SubElement(
-                root, "run", spec=self.config['run']["spec"], nSims=self.config['run']['nSims'])
+                root, "run", spec="Simulator", nSims="1")
 
             simulate = ET.SubElement(
-                run, "simulate", spec=self.config['run']["simulate"]["spec"], id=self.config['run']["simulate"]["id"])
+                run, "simulate", spec="SimulatedTree", id="tree")
             trajectory = ET.SubElement(
-                simulate, "trajectory", spec="StochasticTrajectory", id="traj")
+                simulate, "trajectory", spec="StochasticTrajectory", id="traj", maxTime="1100.0")
 
             # Add population elements
             ET.SubElement(trajectory, "population",
@@ -132,14 +132,10 @@ class generate_xml_files:
             tree = ET.ElementTree(root)
 
             # Write to XML file
-            #tree.write(self.config["FilePath"]["outputFilePath"] + f"{self.paramters}_{i+1}.xml", encoding="utf-8", xml_declaration=True)
+            #tree.write(os.path.expandvars(self.config["FilePath"]["outputFilePath"]) + f"{self.paramters}_{i+1}.xml", encoding="utf-8", xml_declaration=True)
 
-
-            self.config["FilePath"]["outputFilePath"] = os.path.expandvars(
-                self.config["FilePath"]["outputFilePath"]
-            )
             output_path = os.path.join(
-                self.config["FilePath"]["outputFilePath"],
+                os.path.expandvars(self.config["FilePath"]["outputFilePath"]),
                 f"{self.paramters}_{i+1}.xml"
             )
 
@@ -162,6 +158,6 @@ xml_files.excute()
 
 print(f"""XML files generated successfully.
 
-You can find them in {config["FilePath"]["outputFilePath"]}
+You can find them in {os.path.expandvars(self.config["FilePath"]["outputFilePath"])}
 
 """)
