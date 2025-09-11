@@ -6,7 +6,7 @@ import os
 import yaml
 
 # Path to your directory
-with open('/home/miladm/scratch/git/measles_simulations/Scripts/xml_config.yaml', 'r') as file:
+with open('../project-sim-ai/config-files/sconfig.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
 config["FilePath"]["outputFilePath"] = os.path.expandvars(config["FilePath"]["outputFilePath"])

@@ -1,14 +1,14 @@
 # XML_config.yaml
 Directory:
-  Input_Parent_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx"
-  Input_Tree_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx"
-  Input_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/excel/SEIR_1.trees"
-  Output_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/summary-height-length.csv"
-  Output_Nexus_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/combined.full.trees"
+  Input_Parent_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/trials/trial1/SEIDpm-S10k-inf0.0001-Oinfx-Mx-max1100days"
+  Input_Tree_Folder: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/trials/trial1/SEIDpm-S10k-inf0.0001-Oinfx-Mx-max1100days"
+  Input_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/trials/trial1/SEIDpm-S10k-inf0.0001-Oinfx-Mx-max1100days/excel/SEIR_1.trees"
+  Output_Tree_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/trials/trial1/SEIDpm-S10k-inf0.0001-Oinfx-Mx-max1100days/summary-height-length.csv"
+  Output_Nexus_File: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/trials/trial1/SEIDpm-S10k-inf0.0001-Oinfx-Mx-max1100days/combined.full.trees"
   
 FilePath:
-  CSVFilePath: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/SEIDpm-S10k-inf0.001-Oinfx-Mx.csv"
-  outputFilePath: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/SEIDpm-S10k-infx-Oinfx.Mx/"
+  CSVFilePath: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/trials/trial1/SEIDpm-S10k-inf0.0001-Oinfx-Mx-max1100days/SEIDpm-S10k-inf0.001-Oinfx-Mx-max110days.csv"
+  outputFilePath: "$TMPDIR/wissdaten/ZKI-PH2_Data/MiladM/trees/trials/trial1/SEIDpm-S10k-inf0.0001-Oinfx-Mx-max1100days/"
 
 beast:
   version: "2.0"

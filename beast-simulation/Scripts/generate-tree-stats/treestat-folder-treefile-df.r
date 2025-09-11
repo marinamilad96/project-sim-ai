@@ -8,7 +8,7 @@ tmpdir <- Sys.getenv("TMPDIR")
 # Print it to check
 print(tmpdir)
 
-config <- yaml::read_yaml("/home/miladm/scratch/git/TreeStatistics-/scripts/config.yaml")
+config <- yaml::read_yaml("../project-sim-ai/config-files/sconfig.yaml")
 
 # expand $TMPDIR (and other env vars if any)
 # Get the TMPDIR environment variable
