@@ -23,6 +23,8 @@ logs/
 *.png
 #Ignore fasta files
 *.fasta
+*.mp4
+eon/
 
 .DS_Store
 description
